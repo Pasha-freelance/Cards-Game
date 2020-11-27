@@ -186,13 +186,9 @@ function hardLevelsResponsiveStyles(){
     if(window.innerWidth <=637){
         cards[0].remove();
         cards[1].remove();
-         expertAndUnrealTime *= 2;
-        hardTime *= 2;
        fillingCardsWithImages()
     }
     if(window.innerWidth <=510){
-        expertAndUnrealTime *= 2;
-        hardTime *= 2;
         cards.forEach(item=>{
             item.classList.add('small-card');
         })
