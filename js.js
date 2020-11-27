@@ -168,7 +168,7 @@ function easyLevelResponsiveStyles() {
         cards[0].remove();
         cards[1].remove();
         cards.splice(0, 2);
-        refreshCards();
+        fillingCardsWithImages()
         mediumTime=25;
     }
     if (window.innerWidth <= 384) {
@@ -176,7 +176,7 @@ function easyLevelResponsiveStyles() {
         cards[1].remove();
         cards[2].remove();
         cards[4].remove();
-        refreshCards();
+        fillingCardsWithImages()
         mediumTime=20;
     }
     gameBlock.classList.add('game-block__visible__easy');
@@ -186,7 +186,7 @@ function hardLevelsResponsiveStyles(){
     if(window.innerWidth <=637){
         cards[0].remove();
         cards[1].remove();
-        refreshCards();
+       fillingCardsWithImages()
     }
     if(window.innerWidth <=510){
         cards.forEach(item=>{
