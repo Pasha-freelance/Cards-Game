@@ -191,6 +191,8 @@ function hardLevelsResponsiveStyles(){
        fillingCardsWithImages()
     }
     if(window.innerWidth <=510){
+        expertAndUnrealTime *= 2;
+        hardTime *= 2;
         cards.forEach(item=>{
             item.classList.add('small-card');
         })
