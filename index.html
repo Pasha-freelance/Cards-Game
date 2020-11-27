@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>CardsGame</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/devImages/favicon.png" type="image/png">
+<body>
+<div class="container">
+    <!--Starting Page-->
+    <section class="starting-page">
+        <h1>Карточная игра<br>"Найди пару"</h1>
+        <button class="start-button">Начать!</button>
+    </section>
+    <!--Choosing a level-->
+    <section class="choosing-level-block">
+        <h2>Выбери уровень сложности </h2>
+        <ul class="list-of-levels" >
+            <li class="easy-level">Easy</li>
+            <li class="medium-level">Medium</li>
+            <li class="hard-level">Hard</li>
+            <li class="expert-level">Expert</li>
+            <li class="unreal-level">Unreal</li>
+        </ul>
+        <span class="about-levels-button question-animation" ></span>
+    </section>
+    <!--Game block-->
+    <section class="game-block">
+        <button class="reload-button">Завершить игру</button>
+        <div class="timer-block"></div>
+        <div class="statistics">
+            <div class="wins"></div>
+            <div class="attempts"></div>
+            <div class="guessed"></div>
+        </div>
+        <div class="block-with-cards" >
+            <div class="card">
+                <div class="front"></div>
+                <div class="back"></div>
+            </div>
+            <div class="card">
+                <div class="front"></div>
+                <div class="back"></div>
+            </div>
+            <div class="card">
+                <div class="front"></div>
+                <div class="back"></div>
+            </div>
+            <div class="card">
+                <div class="front"></div>
+                <div class="back"></div>
+            </div>
+            <div class="card">
+                <div class="front"></div>
+                <div class="back"></div>
+            </div>
+            <div class="card">
+                <div class="front"></div>
+                <div class="back"></div>
+            </div>
+            <div class="card">
+                <div class="front"></div>
+                <div class="back"></div>
+            </div>
+            <div class="card">
+                <div class="front"></div>
+                <div class="back"></div>
+            </div>
+            <div class="card">
+                <div class="front"></div>
+                <div class="back"></div>
+            </div>
+            <div class="card">
+                <div class="front"></div>
+                <div class="back"></div>
+            </div>
+            <div class="card">
+                <div class="front"></div>
+                <div class="back"></div>
+            </div>
+            <div class="card">
+                <div class="front"></div>
+                <div class="back"></div>
+            </div>
+        </div>
+        <div class="loosing-message message">Loose</div>
+        <div class="win-message message">Win</div>
+    </section>
+</div>
+<div class="popup-about-levels ">
+    <div class="popup-about-levels__inner">
+        <div class="close-popup-button"></div>
+        <ul class="popup-about-levels__list-with-information">
+            <li><h3 class="level-name level-name__easy">Easy</h3><span class="level-description">Самый легкий уровень : небольшое количество карт и без ограничений по времени</span></li>
+            <li><h3 class="level-name level-name__medium">Medium</h3><span class="level-description">Количество карт все так же остается небольшим, но теперь каждый раунд ограничен по времени</span></li>
+            <li><h3 class="level-name level-name__hard">Hard</h3><span class="level-description">В этом уровне будет немного больше карточек и все так же остается ограничение по времени</span></li>
+            <li><h3 class="level-name level-name__expert">Expert</h3><span class="level-description">Много карт, ограничение по времени которое с каждым раундом уменьшается</span></li>
+            <li><h3 class="level-name level-name__unreal">Unreal</h3><span class="level-description">При выборе даного уровня, сохраняются все усложнения предыдущего и добавлется ограничение по количеству ходов</span></li>
+        </ul>
+    </div>
+</div>
+<div class="finishing-the-game-popup">
+    <div class="finishing-the-game-popup__inner">
+        <h3>Вы действительно хотите закончить игру?</h3>
+        <div class="finishing-the-game-popup__buttons-block">
+            <button class="finishing-the-game-button">Да</button>
+            <button class="not-finishing-the-game-button">Нет</button>
+        </div>
+    </div>
+</div>
+<script src="js.js"></script>
+</body>
+</html>
